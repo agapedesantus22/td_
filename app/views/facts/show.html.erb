@@ -1,0 +1,52 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @fact.title %>
+</p>
+
+<p>
+  <strong>Post:</strong>
+  <%= @fact.post %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @fact.user_id %>
+</p>
+
+<h2>Comments</h2>
+<% @facts.comments.each do |comment| %>
+
+<p>
+  <strong>Commenter:</strong>
+  <%= comment.commenter %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= comment.body %>
+</p>
+
+<% end %>
+
+<h2>Add a comment:</h2>
+<%= form_for([@article, @article.comments.build]) do |f| %>
+
+<p>
+  <%= f.label :commenter %><br/>
+  <%= f.text_field :commenter %>
+</p>
+
+<p>
+  <%= f.label :body %><br/>
+  <%= f.text_field :body %>
+</p>
+
+<p>
+  <%= f.submit %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', edit_fact_path(@fact) %> |
+<%= link_to 'Back', facts_path %>
