@@ -14,7 +14,7 @@
  *= require_self
  */
 
-/* a:hover {
+a:hover {
   color: #007ebd;
   background-color: #FFF;
 }
@@ -24,18 +24,24 @@ body {
 }
 
 div#wrapper {
-  margin: auto;
+
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: 150px;
+  margin-bottom: 80px;
+
   background: white;
-  width: 800px;
-  height: 2000px;
+  width: 750px;
+  height: 2450px;
 }
 
 header {
   display: block;
-  padding: 10px 10px 30px 10px;
+  padding: 10px 10px 10px 10px;
+  margin: 15px 40px 65px 90px;
 }
 
-.websitelogo {
+.websiteLogo {
   float: left;
   text-decoration: none;
 }
@@ -69,4 +75,4 @@ header {
 
 main {
   padding: 10px 20px 20px 20px;
-} */
+}
