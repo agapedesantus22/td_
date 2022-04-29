@@ -11,7 +11,7 @@ double shifts
 29 months, 1.0.8.0
 3 years, nt 83, 1,2,1, 3*
 
-9.2.1 2.6 1.8 1.6 1.8R
+9.2.1 2.6 1.8 1.6 1.8R, valedictorian
 
 
 
